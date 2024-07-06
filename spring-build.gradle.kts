@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.ir.backend.js.compile
-
 val springBootVersion = "3.3.1"
 val kotlinVersion = "1.9.24"
 val kotlinResultVersion = "2.0.0"
@@ -61,6 +59,15 @@ repositories {
  * - 'testRuntimeOnly': Specifies dependencies that are only needed at runtime for testing.
  */
 dependencies {
+
+    /**
+     * Spring support
+     */
+//        // Jackson support
+//        implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+//        // Reflection support
+//        implementation("org.jetbrains.kotlin:kotlin-reflect")
+
     /**
      * Utils
      */
@@ -84,7 +91,7 @@ dependencies {
 //        implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0")
 
     /**
-     * Spring
+     * Spring Boot starters
      */
 //        // Spring Actuator:
 //        implementation("org.springframework.boot:spring-boot-starter-actuator")
@@ -94,10 +101,6 @@ dependencies {
 //        implementation("org.springframework.boot:spring-boot-starter-web")
 //        // Spring for RabbitMQ:
 //        implementation("org.springframework.boot:spring-boot-starter-amqp")
-//        // Jackson support
-//        implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-//        // Reflection support
-//        implementation("org.jetbrains.kotlin:kotlin-reflect")
 
 
     /**
